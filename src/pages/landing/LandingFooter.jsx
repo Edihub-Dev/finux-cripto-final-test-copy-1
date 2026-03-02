@@ -1,4 +1,4 @@
-import finuxLogo from "../../assets/Finux (1).svg";
+import finuxLogo from "../../assets/icon with 672 safe zone.png";
 
 const LandingFooter = () => {
   const scrollToAppPromo = () => {

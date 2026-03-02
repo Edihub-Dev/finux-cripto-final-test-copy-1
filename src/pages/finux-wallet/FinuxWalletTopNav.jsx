@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Download } from "lucide-react";
 
-import finuxLogo from "../../assets/Finux (1).svg";
+import finuxLogo from "../../assets/icon with 672 safe zone.png";
 
 const FinuxWalletTopNav = ({
   handleNavClick,
