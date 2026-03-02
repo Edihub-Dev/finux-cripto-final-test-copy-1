@@ -1,4 +1,4 @@
-import finuxLogo from "../../assets/icon with 672 safe zone.png";
+import finuxLogo from "../../assets/Finux (1).svg";
 
 const EcosystemFooter = () => {
   const links = [
