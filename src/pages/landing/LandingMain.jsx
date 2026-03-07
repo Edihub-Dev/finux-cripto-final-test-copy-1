@@ -25,7 +25,7 @@ const LandingMain = ({
         <section className="features" id="features">
           <div className="features__intro" data-animate>
             <p className="eyebrow">Why this app for you?</p>
-            <h2>Explore how Defichain fits your workflow</h2>
+            <h2>Explore how Finux fits your workflow</h2>
             <p>
               Discover the features that make our application a dependable
               option for investors who demand security, clarity, and control.
@@ -105,7 +105,7 @@ const LandingMain = ({
         >
           <div className="how-it-works__container">
             <div className="how-it-works__header">
-              <h2 id="how-it-works-title">How does it work?</h2>
+              <h2 id="how-it-works-title">How to create a wallet?</h2>
               <p>
                 It&apos;s easy to get started. Follow our simple three-step
                 guide to set up your account and dive into the world of crypto.
@@ -199,7 +199,9 @@ const LandingMain = ({
       >
         <div className="invest-banner__surface" style={investBannerStyle}>
           <div className="invest-banner__content">
-            <h2 id="invest-banner-title">Start investing in crypto today</h2>
+            <h2 id="invest-banner-title">
+              Start earning passive income on FINUX
+            </h2>
             <p>
               Seize the opportunity to enter the digital finance arena. Get our
               application and start your investment journey now.

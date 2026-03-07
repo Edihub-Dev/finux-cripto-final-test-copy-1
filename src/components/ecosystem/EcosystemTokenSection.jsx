@@ -21,13 +21,13 @@ const EcosystemTokenSection = () => {
           </div>
 
           <h2 className="mt-5 text-[26px] font-bold leading-[1.2] text-[#F5F5F5] sm:text-[36px] lg:text-[48px]">
-            The Heart of the <span className="text-[#FF8A00]">Network</span>
+            Universal <span className="text-[#FF8A00]">Utility</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-[520px] text-[16px] leading-[1.8] text-[rgba(255,255,255,0.75)] lg:mx-0">
-            The FINUX Token is engineered for scarcity and utility. It powers
-            governance, rewards participation, and serves as the primary medium
-            of exchange across the entire ecosystem.
+            FNX is the native utility token powering the FINUX ecosystem,
+            enabling users to participate in staking, liquidity pools, reward
+            distribution, and broader ecosystem activities.
           </p>
 
           <div className="mt-6 space-y-[18px] sm:mt-10 sm:space-y-[30px]">

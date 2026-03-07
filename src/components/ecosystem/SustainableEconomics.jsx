@@ -33,14 +33,15 @@ const SustainableEconomics = () => {
     >
       <div className="mx-auto w-full max-w-[1200px] text-center" data-animate>
         <h2 className="text-[26px] font-bold leading-[1.2] text-[#F5F5F5] sm:text-[36px] lg:text-[48px]">
-          Sustainable Economics
+          Tokenomics
         </h2>
 
         <div className="mx-auto mb-6 mt-4 h-1 w-[120px] rounded bg-[linear-gradient(90deg,#FF8A00,#FFA733)]" />
 
         <p className="mx-auto max-w-[700px] text-[17px] leading-[1.8] text-[rgba(255,255,255,0.75)]">
-          Designed for long-term growth and stability, our tokenomics model
-          rewards holders and fuels the ecosystem.
+          The FINUX token model uses several mechanisms to maintain long-term
+          growth and stability, our tokenomics model rewards holders and fuels
+          the ecosystem..
         </p>
 
         <div className="mt-[32px] grid grid-cols-1 gap-[20px] sm:mt-[70px] sm:gap-[30px] sm:grid-cols-2 lg:grid-cols-4">

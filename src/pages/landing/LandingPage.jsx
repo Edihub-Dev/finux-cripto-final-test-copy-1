@@ -7,9 +7,15 @@ import goldIcon from "../../assets/3lQ7907y7C6l2ACYCAQKDOQVYg copy 1.svg";
 import stackIcon from "../../assets/kFW9oB0lpLbUlaE5PRMjFjfn0Qc copy 1.svg";
 import realtimeIcon from "../../assets/uDGuWbZP77iu7pgjp04gtfeUY copy 1.svg";
 import bitcoinImage from "../../assets/bitcoin copy 1.svg";
+import importWalletImage from "../../assets/Import Wallet.svg";
+import phraseGenerationImage from "../../assets/Phrase Generation.svg";
+import dappFinuxHomeImage from "../../assets/DApp_ Finux- Home.svg";
 import cryptoAccessImage from "../../assets/Screenshot 2026-01-27 at 3.41.16\u202FPM copy 1.svg";
 import investBackground from "../../assets/124 2.svg";
 import investShape from "../../assets/1.svg";
+import homePanelImage from "../../assets/Home.svg";
+import explorePanelImage from "../../assets/Explore.svg";
+import analyticsPanelImage from "../../assets/Explore_ detail Green.svg";
 import LandingFooter from "./LandingFooter.jsx";
 import LandingHeader from "./LandingHeader.jsx";
 import LandingMain from "./LandingMain.jsx";
@@ -32,15 +38,15 @@ const avatars = [
 const featureRows = [
   {
     id: "wallet",
-    title: "Built-in wallet",
+    title: "Non-Custodial Architecture",
     description:
-      "Your all-in-one crypto tool. Securely store, send, and receive digital assets with our fully integrated wallet.",
+      "FINUX wallets are non-custodial, meaning users maintain full control of their funds and private keys.",
     panel: "balance",
     icon: cardAccent,
   },
   {
     id: "transfer",
-    title: "Instant crypto transfers",
+    title: "Instant Swapping",
     description:
       "Move funds between accounts in seconds. Enjoy fast, reliable transactions so you never miss a great opportunity.",
     panel: "transfer",
@@ -59,30 +65,29 @@ const featureRows = [
 const howItWorksSteps = [
   {
     id: "create",
-    label: "Create an account",
+    label: "Create/import wallet",
     title: "Create account",
     description:
       "Begin your journey into cryptocurrency by creating a secure account with us. The process is quick, simple, and straightforward.",
-    image: bitcoinImage,
+    image: importWalletImage,
     imageAlt: "Finux account creation screen on mobile",
   },
   {
     id: "transferFunds",
-    label: "Transfer your funds",
+    label: "Save recovery key",
     title: "Transfer your funds",
     description:
       "Connect your preferred funding methods and move money between wallets in seconds. Track every transfer with real-time status updates.",
-    image: bitcoinImage,
+    image: phraseGenerationImage,
     imageAlt: "Finux transfer funds interface on mobile",
   },
   {
     id: "earn",
-    label: "Earn passive interest",
+    label: "Register Finux Dex",
     title: "Earn passive interest",
     description:
       "Activate staking and yield strategies with a tap. Watch your assets grow safely while keeping full control of your portfolio.",
-    image: bitcoinImage,
-    imageAlt: "Finux portfolio analytics on mobile",
+    image: dappFinuxHomeImage,
   },
 ];
 
@@ -134,75 +139,49 @@ const LandingPage = () => {
 
   const renderFeaturePanel = (type) => {
     const analyticsPanel = (
-      <div className="panel-analytics">
-        <div className="panel-balance__header">
-          <div>
-            <span>Bitcoin</span>
-            <span className="panel-tag">USDT</span>
-          </div>
-          <span className="panel-change positive">+8.74%</span>
-        </div>
-        <p className="panel-amount">$98,418.05</p>
-        <div className="panel-tabs">
-          {["1W", "6M", "1Y", "YTD"].map((label) => (
-            <span key={label} className={label === "6M" ? "active" : ""}>
-              {label}
-            </span>
-          ))}
-        </div>
-        <div className="panel-chart">
-          {[60, 45, 75, 50, 85, 40].map((value, index) => (
-            <span key={index} style={{ height: `${value}%` }} />
-          ))}
-        </div>
+      <div
+        className="panel-analytics panel-analytics--image"
+        aria-label="Analytics illustration"
+      >
+        <img
+          src={analyticsPanelImage}
+          alt="Analytics"
+          className="panel-analytics__image"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     );
 
     switch (type) {
       case "balance":
         return (
-          <div className="panel-balance">
-            <div className="panel-balance__header">
-              <span>Balance</span>
-              <span className="panel-change">+4.6%</span>
-            </div>
-            <p className="panel-amount">
-              $48,296.24 <span>USD</span>
-            </p>
-            <ul className="asset-list">
-              <li>
-                <span>Bitcoin</span>
-                <span>$2,950.75</span>
-              </li>
-              <li>
-                <span>Litecoin</span>
-                <span>$1,984.02</span>
-              </li>
-              <li>
-                <span>Ethereum</span>
-                <span>$2,724.16</span>
-              </li>
-            </ul>
+          <div
+            className="panel-balance panel-balance--image"
+            aria-label="Home illustration"
+          >
+            <img
+              src={homePanelImage}
+              alt="Home"
+              className="panel-balance__image"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         );
       case "transfer":
         return (
-          <div className="panel-transfer">
-            <div className="panel-field">
-              <label>From</label>
-              <div className="panel-select">
-                <span>Ethereum</span>
-              </div>
-              <strong>24.32</strong>
-            </div>
-            <div className="panel-field">
-              <label>To</label>
-              <div className="panel-select">
-                <span>Bitcoin</span>
-              </div>
-              <strong>0.594</strong>
-            </div>
-            <button className="pill-button pill-button--soft">Send</button>
+          <div
+            className="panel-transfer panel-transfer--image"
+            aria-label="Explore illustration"
+          >
+            <img
+              src={explorePanelImage}
+              alt="Explore"
+              className="panel-transfer__image"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         );
       case "analytics":
@@ -222,17 +201,17 @@ const LandingPage = () => {
     },
     {
       id: "payments",
-      title: "Easy payments",
+      title: "Triple Income Model",
       icon: lockIcon,
     },
     {
       id: "visualization",
-      title: "Data visualization",
+      title: "Community Powered Growth",
       icon: goldIcon,
     },
     {
       id: "realtime",
-      title: "Real-time transaction engine",
+      title: "Automated Token Minting",
       icon: stackIcon,
     },
   ];

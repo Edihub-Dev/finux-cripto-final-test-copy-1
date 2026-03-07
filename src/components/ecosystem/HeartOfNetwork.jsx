@@ -78,7 +78,9 @@ const HeartOfNetwork = () => {
                   <p className="text-xs font-semibold tracking-wide text-white/55">
                     Finality
                   </p>
-                  <p className="mt-2 text-lg font-semibold text-white">&lt; 1m</p>
+                  <p className="mt-2 text-lg font-semibold text-white">
+                    &lt; 1m
+                  </p>
                 </div>
               </div>
             </div>

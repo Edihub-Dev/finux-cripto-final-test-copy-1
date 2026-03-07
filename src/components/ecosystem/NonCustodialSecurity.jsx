@@ -1,7 +1,7 @@
 import { CheckCircle2, Wallet } from "lucide-react";
 
 const features = [
-  "Military-grade encryption for private keys",
+  "High quality encryption for private keyss",
   "Built-in dApp browser and Web3 support",
   "Multi-chain asset management",
   "One-click staking and rewards",
@@ -89,13 +89,6 @@ const NonCustodialSecurity = () => {
               </div>
             ))}
           </div>
-
-          <a
-            href="#"
-            className="mt-5 inline-flex items-center gap-2 text-[16px] font-semibold text-[#FF8A00] no-underline transition duration-300 ease-out hover:translate-x-1"
-          >
-            Learn more about security →
-          </a>
         </div>
       </div>
     </section>
