@@ -2,21 +2,19 @@ import { BadgeCheck, Clock3, Coins } from "lucide-react";
 
 const items = [
   {
-    title: "Unbonding Period",
-    description:
-      "A 14-day unbonding period applies to all staked assets to prevent rapid market fluctuations.",
+    title: "Minimum Deposit",
+    description: "$20 minimum participation amount.",
     Icon: Clock3,
   },
   {
-    title: "Token Burning",
-    description:
-      "A percentage of all withdrawal fees are automatically burnt, reducing total supply over time.",
+    title: "Withdrawal Minimum",
+    description: "Minimum withdrawal limit  1 USDC",
     Icon: Coins,
   },
   {
-    title: "Auto-Compounding",
+    title: "Performance Limit",
     description:
-      "Rewards can be set to auto-compound, reinvesting your earnings to maximize APY effortlessly.",
+      "Rewards are limited to 3x the deposit amount.After reaching the limit, users must re-top-up to continue earning.",
     Icon: BadgeCheck,
   },
 ];

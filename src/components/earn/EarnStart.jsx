@@ -15,10 +15,10 @@ const EarnStart = () => {
       <div className="mx-auto w-full px-4 py-[60px] text-center sm:px-6 sm:py-[140px] lg:px-8">
         <div data-animate className="mx-auto max-w-[900px]">
           <h2 className="font-bold tracking-[-0.5px] text-[#F5F5F5] text-[28px] leading-[1.2] md:text-[40px] lg:text-[56px]">
-            Start Earning with FINUX
+            Start Earning with FINUX Today.
           </h2>
 
-          <p className="mx-auto mt-6 max-w-[650px] text-[15px] leading-[1.7] text-[#CBDA90] sm:text-[18px]">
+          <p className="mx-auto mt-6 max-w-[650px] text-[15px] leading-[1.7] text-[#7d7670] sm:text-[18px]">
             Join thousands of participants securing the network and earning
             rewards today.
           </p>
@@ -29,7 +29,7 @@ const EarnStart = () => {
             onClick={() => window.open(apkUrl, "_blank", "noopener,noreferrer")}
           >
             <Download className="h-5 w-5" />
-            <span>Download FINUX Wallet</span>
+            <span>Download APK</span>
           </button>
         </div>
       </div>

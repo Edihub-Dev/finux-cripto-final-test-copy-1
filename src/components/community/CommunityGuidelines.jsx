@@ -39,8 +39,9 @@ const CommunityGuidelines = () => {
                 Community Guidelines
               </h2>
               <p className="mx-auto max-w-sm text-lg leading-relaxed text-gray-400 lg:mx-0">
-                We maintain a high standard for our community. Integrity is our
-                currency.
+                Only verified users can participate. <br /> Duplicate or fake
+                accounts are prohibited. <br /> Referral abuse may result in
+                account restriction.
               </p>
             </div>
 

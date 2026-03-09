@@ -2,15 +2,15 @@ import { BadgeCheck, Users, Wallet } from "lucide-react";
 
 const bullets = [
   {
-    title: "Verified user onboarding",
+    title: "Performance rewards",
     Icon: BadgeCheck,
   },
   {
-    title: "Trust-based rewards and referrals",
+    title: "Rank progression",
     Icon: Users,
   },
   {
-    title: "Transparent tracking dashboard",
+    title: "Leadership income",
     Icon: Wallet,
   },
 ];
@@ -27,9 +27,7 @@ const ReferralProgram = () => {
             Referral Program
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-6 text-white/70 sm:text-base">
-            Ethical growth powered by real people. Earn rewards based on
-            verified activity and genuine contribution to the ecosystem, not
-            spam.
+            Users can invite others to participate in ecosystem.
           </p>
 
           <div className="mt-6 space-y-3">

@@ -15,8 +15,7 @@ const JoinCommunity = () => {
           Join the FINUX Community
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[#FFFFFF99] sm:text-base">
-          Be part of a financial revolution that values integrity and rewards
-          contribution. Start your journey today.
+          Download the wallet and start participating in the FINUX ecosystem.
         </p>
 
         <button
@@ -24,7 +23,7 @@ const JoinCommunity = () => {
           className="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-orange-500 px-8 py-4 text-sm font-semibold text-black shadow-lg shadow-orange-500/30 transition-all duration-300 hover:scale-105 hover:bg-orange-600 hover:shadow-orange-500/50"
           onClick={() => window.open(apkUrl, "_blank", "noopener,noreferrer")}
         >
-          Download FINUX Wallet
+          Download APK
           <Download className="h-4 w-4" />
         </button>
       </div>

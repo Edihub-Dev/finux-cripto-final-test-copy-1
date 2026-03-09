@@ -16,14 +16,13 @@ const CommunityHero = () => {
         </span>
 
         <h1 className="mb-6 text-3xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-          Built on Participation.
-          <span className="block text-white/60">Driven by Trust.</span>
+          Community Driven
+          <span className="block text-white/60">Growth.</span>
         </h1>
 
         <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#FFFFFF99]">
-          Join an exclusive ecosystem built on verified participation and
-          ethical contribution. We are shaping the future of decentralized
-          finance, together.
+          The FINUX ecosystem grows through a structured referral and leadership
+          program that rewards users for contributing to network expansion.
         </p>
 
         <div className="flex flex-col justify-center gap-4 sm:flex-row sm:gap-6">

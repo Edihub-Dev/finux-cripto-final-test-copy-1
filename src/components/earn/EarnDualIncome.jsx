@@ -18,14 +18,15 @@ const EarnDualIncome = () => {
           </div>
 
           <h2 className="mt-[30px] font-bold text-[#F5F5F5] text-[26px] leading-[1.2] md:text-[36px] lg:text-[52px]">
-            Dual Income System
+            Triple Income Modal
           </h2>
 
           <p className="mx-auto mt-[25px] max-w-[750px] text-[15px] leading-[1.8] text-[#CBAD90] sm:text-[16px] lg:text-[17px]">
-            Maximize your participation through multiple reward pathways. Our
-            sustainable model ensures balanced distribution caps to maintain
-            long-term ecosystem health, allowing you to earn from both staking
-            yields and liquidity fees simultaneously.
+            In addition to staking and liquidity rewards,
+            <br /> FINUX includes: Performance incentives from community
+            participation.
+            <br /> Income types include: performance incentives, liquidity pool
+            rewards, FNX staking rewards
           </p>
 
           <div className="mt-10 inline-flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">

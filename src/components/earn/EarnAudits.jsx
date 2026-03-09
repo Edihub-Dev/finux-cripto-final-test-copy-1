@@ -2,15 +2,13 @@ import { FileText, ScanSearch, ShieldAlert } from "lucide-react";
 
 const items = [
   {
-    title: "Audited Modules",
-    description:
-      "Core contracts are reviewed and verified before production deployment.",
+    title: "50%",
+    description: "of FNX tokens are burned.",
     Icon: ScanSearch,
   },
   {
-    title: "Continuous Monitoring",
-    description:
-      "Track abnormal behavior with alerts and public incident reporting.",
+    title: "50%",
+    description: "of FNX tokens return to supply.",
     Icon: ShieldAlert,
   },
   {
@@ -29,11 +27,10 @@ const EarnAudits = () => {
           AUDITS
         </p>
         <h2 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
-          Verified Security Posture
+          Ecosystem Stability Measures
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70 sm:text-base">
-          Always verify contracts and guides through official documentation.
-          Never trust unsolicited messages.
+          FINUX implements mechanisms to maintain token sustainability.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3">

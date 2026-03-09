@@ -19,20 +19,18 @@ const EarnStakingStability = () => {
             </div>
 
             <h2 className="mt-5 font-bold text-[#F5F5F5] text-[26px] md:text-[32px] lg:text-[42px]">
-              Self Staking for Stability
+              Staking
             </h2>
 
             <p className="mt-5 max-w-[520px] text-[16px] leading-[1.7] text-[#e4ce9c72] max-lg:mx-auto">
-              Participate in network security and stability by staking your
-              FINUX tokens. Enjoy consistent rewards derived from ecosystem
-              growth while maintaining full ownership of your assets.
+              Users can stake FNX tokens directly.
             </p>
 
             <div className="mt-5 space-y-3 max-lg:mx-auto max-lg:w-fit max-lg:text-left">
               {[
-                "Consistent ecosystem rewards",
-                "Full asset ownership",
-                "Network security contribution",
+                "up to 2% monthly reward rate",
+                "instant reward withdrawals",
+                "flexible staking participation",
               ].map((text) => (
                 <div
                   key={text}

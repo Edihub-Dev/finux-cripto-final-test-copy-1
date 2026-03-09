@@ -61,14 +61,16 @@ const EarnLiquidityContribution = () => {
             </div>
 
             <h2 className="font-bold text-[#F5F5F5] text-[26px] leading-[1.2] md:text-[32px] lg:text-[44px]">
-              Liquidity Contribution
+              Liquidity Pools
             </h2>
 
             <p className="mt-5 max-w-[520px] text-[16px] leading-[1.7] text-[#CBAD90]">
-              Provide essential liquidity to the ecosystem pairs. Understanding
-              the mechanics of liquidity provision allows for deeper ecosystem
-              integration and increased reward potential through transaction
-              fees.
+              Liquidity pools allow users to provide FNX and stablecoins to
+              support ecosystem trading. <br className="hidden sm:inline" />
+              <br className="sm:hidden" />
+              Requirements: <br /> Equal value of: FNX + USDC{" "}
+              <br className="hidden sm:inline" />
+              <br className="sm:hidden" /> Rewards: Up to 5% monthly yield.
             </p>
 
             <a

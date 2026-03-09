@@ -11,18 +11,21 @@ const FAQSection = () => {
       },
       {
         id: "staking-rewards",
-        title: "How are staking rewards calculated?",
-        body: "Staking rewards depend on pool emissions, total staked liquidity, and the time you remain staked. Check each pool dashboard for up-to-date APR and reward schedules.",
+        title: "What is the deposit structure in Finux?",
+        body: {
+          intro: "Your deposit is split into a combination of:",
+          bullets: ["30% MSTC", "70% USDC (Polygon network)"],
+        },
       },
       {
         id: "contract-address",
-        title: "What is the official contract address?",
-        body: "Always use the contract address listed in the official FINUX documentation and verified announcements. Never trust contract addresses shared via unsolicited DMs.",
+        title: "What is liquidity pool?",
+        body: "A liquidity pool is where users provide tokens to help trading happen smoothly. You can earn daily rewards of up to 5% MPY (Monthly Percentage Yield). These rewards are generated from the system's trading and ecosystem activity",
       },
       {
         id: "audit-reports",
-        title: "Where can I find audit reports?",
-        body: "Audit reports are published in the Latest Audits section and linked from the official documentation repository for transparency.",
+        title: "What happens after reaching the income limit?",
+        body: "After 3x performance income, you must retop-up to continue earning",
       },
     ],
     [],
@@ -80,9 +83,20 @@ const FAQSection = () => {
                   className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
                 >
                   <div className="overflow-hidden">
-                    <p className="mt-5 text-sm leading-7 text-[#CBAD90]">
-                      {item.body}
-                    </p>
+                    {typeof item.body === "string" ? (
+                      <p className="mt-5 text-sm leading-7 text-[#CBAD90]">
+                        {item.body}
+                      </p>
+                    ) : (
+                      <div className="mt-5 text-sm leading-7 text-[#CBAD90]">
+                        <p className="m-0">{item.body.intro}</p>
+                        <ul className="mt-2 list-disc space-y-1 pl-5">
+                          {item.body.bullets.map((line) => (
+                            <li key={line}>{line}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
