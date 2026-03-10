@@ -1484,6 +1484,11 @@ body.landing-page .hero-surface {
   padding-inline: var(--layout-page-gutter);
 }
 
+body.landing-page .hero-surface__content {
+  padding-left: clamp(1.25rem, 8vw, 20vw);
+  padding-right: clamp(1.25rem, 3.5vw, 3rem);
+}
+
 .hero-surface::after {
   content: "";
 
@@ -2806,6 +2811,10 @@ body.landing-page .hero__visual {
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6));
 
   animation: float-cloud 8s ease-in-out infinite;
+}
+
+body.landing-page .coin-cloud {
+  margin-top: clamp(1.25rem, 4vw, 3.5rem);
 }
 
 @keyframes float-cloud {
