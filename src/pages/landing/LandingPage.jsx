@@ -7,7 +7,10 @@ import goldIcon from "../../assets/3lQ7907y7C6l2ACYCAQKDOQVYg copy 1.svg";
 import stackIcon from "../../assets/kFW9oB0lpLbUlaE5PRMjFjfn0Qc copy 1.svg";
 import realtimeIcon from "../../assets/uDGuWbZP77iu7pgjp04gtfeUY copy 1.svg";
 import bitcoinImage from "../../assets/bitcoin copy 1.svg";
-import importWalletImage from "../../assets/Import Wallet.svg";
+import importWalletImage from "../../assets/Import Wallet.png";
+import step1Image from "../../assets/step1.png";
+import step2Image from "../../assets/step2.png";
+import step3Image from "../../assets/step3.png";
 import phraseGenerationImage from "../../assets/Phrase Generation.svg";
 import dappFinuxHomeImage from "../../assets/DApp_ Finux- Home.svg";
 import cryptoAccessImage from "../../assets/Screenshot 2026-01-27 at 3.41.16\u202FPM copy 1.svg";
@@ -16,6 +19,9 @@ import investShape from "../../assets/1.svg";
 import homePanelImage from "../../assets/Home.svg";
 import explorePanelImage from "../../assets/Explore.svg";
 import analyticsPanelImage from "../../assets/Explore_ detail Green.svg";
+import walletPanelImage from "../../assets/Explore_ detail Green-M-O57FaH.png";
+import transferCombinedImage from "../../assets/Explore-CvK2qfYC.png";
+import analyticsCombinedImage from "../../assets/Home-BifaxK7T.png";
 import LandingFooter from "./LandingFooter.jsx";
 import LandingHeader from "./LandingHeader.jsx";
 import LandingMain from "./LandingMain.jsx";
@@ -41,7 +47,7 @@ const featureRows = [
     title: "Non-Custodial Architecture",
     description:
       "FINUX wallets are non-custodial, meaning users maintain full control of their funds and private keys.",
-    panel: "balance",
+    panel: "wallet-balance",
     icon: cardAccent,
   },
   {
@@ -49,7 +55,7 @@ const featureRows = [
     title: "Instant Swapping",
     description:
       "Move funds between accounts in seconds. Enjoy fast, reliable transactions so you never miss a great opportunity.",
-    panel: "transfer",
+    panel: "transfer-combined",
     icon: transferIcon,
   },
   {
@@ -57,7 +63,7 @@ const featureRows = [
     title: "Visualize your performance",
     description:
       "Track your portfolio with simple charts and analytics. Gain insights to make smarter, well-informed investment decisions.",
-    panel: "analytics",
+    panel: "analytics-combined",
     icon: analyticsIcon,
   },
 ];
@@ -69,7 +75,7 @@ const howItWorksSteps = [
     title: "Create account",
     description:
       "Begin your journey into cryptocurrency by creating a secure account with us. The process is quick, simple, and straightforward.",
-    image: importWalletImage,
+    image: step1Image,
     imageAlt: "Finux account creation screen on mobile",
   },
   {
@@ -78,7 +84,7 @@ const howItWorksSteps = [
     title: "Transfer your funds",
     description:
       "Connect your preferred funding methods and move money between wallets in seconds. Track every transfer with real-time status updates.",
-    image: phraseGenerationImage,
+    image: step2Image,
     imageAlt: "Finux transfer funds interface on mobile",
   },
   {
@@ -87,7 +93,7 @@ const howItWorksSteps = [
     title: "Earn passive interest",
     description:
       "Activate staking and yield strategies with a tap. Watch your assets grow safely while keeping full control of your portfolio.",
-    image: dappFinuxHomeImage,
+    image: step3Image,
   },
 ];
 
@@ -154,6 +160,21 @@ const LandingPage = () => {
     );
 
     switch (type) {
+      case "wallet-balance":
+        return (
+          <div
+            className="panel-balance panel-balance--image"
+            aria-label="Wallet illustration"
+          >
+            <img
+              src={walletPanelImage}
+              alt="Wallet"
+              className="panel-balance__image"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        );
       case "balance":
         return (
           <div
@@ -169,6 +190,21 @@ const LandingPage = () => {
             />
           </div>
         );
+      case "transfer-combined":
+        return (
+          <div
+            className="panel-transfer panel-transfer--image"
+            aria-label="Explore illustration"
+          >
+            <img
+              src={transferCombinedImage}
+              alt="Explore"
+              className="panel-transfer__image"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        );
       case "transfer":
         return (
           <div
@@ -179,6 +215,21 @@ const LandingPage = () => {
               src={explorePanelImage}
               alt="Explore"
               className="panel-transfer__image"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        );
+      case "analytics-combined":
+        return (
+          <div
+            className="panel-analytics panel-analytics--image"
+            aria-label="Analytics illustration"
+          >
+            <img
+              src={analyticsCombinedImage}
+              alt="Analytics"
+              className="panel-analytics__image"
               loading="lazy"
               decoding="async"
             />

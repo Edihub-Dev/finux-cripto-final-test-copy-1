@@ -36,30 +36,102 @@ const LandingMain = ({
 
           <div className="feature-rows">
             {featureRows.map((row) => (
-              <article key={row.id} className="feature-row" data-animate>
-                <div className="feature-card">
-                  <div className="feature-card__text">
-                    <h3>{row.title}</h3>
-                    <p>{row.description}</p>
+              <article
+                key={row.id}
+                className={`feature-row${row.id === "wallet" || row.id === "transfer" || row.id === "analytics" ? " feature-row--combined" : ""}${row.id === "transfer" ? " feature-row--transfer" : ""}`}
+                data-animate
+              >
+                {row.id === "wallet" ||
+                row.id === "transfer" ||
+                row.id === "analytics" ? (
+                  <div className="feature-row__card">
+                    {row.id === "transfer" ? (
+                      <>
+                        <div className="feature-row__media">
+                          <div className={`feature-panel panel--${row.panel}`}>
+                            {renderFeaturePanel(row.panel)}
+                          </div>
+                        </div>
+
+                        <div className="feature-row__content">
+                          <div className="feature-card__text">
+                            <h3>{row.title}</h3>
+                            <p>{row.description}</p>
+                          </div>
+                          <div className="feature-card__footer">
+                            <img
+                              src={row.icon}
+                              alt=""
+                              aria-hidden="true"
+                              className="feature-card__icon"
+                            />
+                            <button
+                              className="icon-button"
+                              aria-label="Learn more about feature"
+                            >
+                              ↗
+                            </button>
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="feature-row__content">
+                          <div className="feature-card__text">
+                            <h3>{row.title}</h3>
+                            <p>{row.description}</p>
+                          </div>
+                          <div className="feature-card__footer">
+                            <img
+                              src={row.icon}
+                              alt=""
+                              aria-hidden="true"
+                              className="feature-card__icon"
+                            />
+                            <button
+                              className="icon-button"
+                              aria-label="Learn more about feature"
+                            >
+                              ↗
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className="feature-row__media">
+                          <div className={`feature-panel panel--${row.panel}`}>
+                            {renderFeaturePanel(row.panel)}
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
-                  <div className="feature-card__footer">
-                    <img
-                      src={row.icon}
-                      alt=""
-                      aria-hidden="true"
-                      className="feature-card__icon"
-                    />
-                    <button
-                      className="icon-button"
-                      aria-label="Learn more about feature"
-                    >
-                      ↗
-                    </button>
-                  </div>
-                </div>
-                <div className={`feature-panel panel--${row.panel}`}>
-                  {renderFeaturePanel(row.panel)}
-                </div>
+                ) : (
+                  <>
+                    <div className="feature-card">
+                      <div className="feature-card__text">
+                        <h3>{row.title}</h3>
+                        <p>{row.description}</p>
+                      </div>
+                      <div className="feature-card__footer">
+                        <img
+                          src={row.icon}
+                          alt=""
+                          aria-hidden="true"
+                          className="feature-card__icon"
+                        />
+                        <button
+                          className="icon-button"
+                          aria-label="Learn more about feature"
+                        >
+                          ↗
+                        </button>
+                      </div>
+                    </div>
+                    <div className={`feature-panel panel--${row.panel}`}>
+                      {renderFeaturePanel(row.panel)}
+                    </div>
+                  </>
+                )}
               </article>
             ))}
           </div>
