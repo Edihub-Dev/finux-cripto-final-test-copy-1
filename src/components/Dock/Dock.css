@@ -163,6 +163,27 @@
   }
 }
 
+@media (min-width: 521px) and (max-width: 900px) {
+  .dock-panel.dock-panel--ecosystem {
+    width: calc(100vw - 1.5rem);
+
+    justify-content: space-between;
+
+    gap: 0.5rem;
+  }
+
+  .dock-item.dock-item--text {
+    flex: 1 1 0;
+
+    width: auto !important;
+  }
+
+  .dock-item.dock-item--text .dock-text {
+    padding: 0 10px;
+    font-size: 0.78rem;
+  }
+}
+
 .dock-label {
   position: absolute;
   top: -2.1rem;

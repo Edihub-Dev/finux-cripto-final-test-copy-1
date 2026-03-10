@@ -31,6 +31,9 @@ const useInView = () => {
 const CTA = () => {
   const { ref, isInView } = useInView();
 
+  const apkUrl =
+    "https://finux-online.s3.ap-south-1.amazonaws.com/apk/finux.apk";
+
   return (
     <section
       ref={ref}
@@ -52,15 +55,35 @@ const CTA = () => {
           </p>
 
           <div className="mt-10">
-            <button className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-black/80 bg-orange-500 px-10 py-4 text-base font-semibold text-black shadow-[0_18px_55px_rgba(249,115,22,0.32)] transition duration-300 hover:border-black hover:bg-orange-400 hover:shadow-[0_18px_70px_rgba(249,115,22,0.45)] sm:w-auto">
+            <button
+              type="button"
+              className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-black/80 bg-orange-500 px-10 py-4 text-base font-semibold text-black shadow-[0_18px_55px_rgba(249,115,22,0.32)] transition duration-300 hover:border-black hover:bg-orange-400 hover:shadow-[0_18px_70px_rgba(249,115,22,0.45)] sm:w-auto"
+              onClick={() => {
+                const el = document.getElementById("download-app");
+                if (el) {
+                  const rect = el.getBoundingClientRect();
+                  const inView =
+                    rect.top >= 0 &&
+                    rect.top <= window.innerHeight * 0.5 &&
+                    rect.bottom > 0;
+
+                  if (!inView) {
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                    return;
+                  }
+                }
+
+                window.open(apkUrl, "_blank", "noopener,noreferrer");
+              }}
+            >
               <span>Get Started Now</span>
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5" />
             </button>
           </div>
 
-          <p className="mt-10 text-sm text-[rgb(203_173_144/1)]">
+          {/* <p className="mt-10 text-sm text-[rgb(203_173_144/1)]">
             Available for iOS, Android, and Desktop.
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

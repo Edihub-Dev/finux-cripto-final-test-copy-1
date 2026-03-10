@@ -34,9 +34,9 @@ const EarnAudits = () => {
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {items.map(({ title, description, Icon }) => (
+          {items.map(({ title, description, Icon }, index) => (
             <article
-              key={title}
+              key={`${title}-${index}`}
               className="rounded-3xl border border-white/10 bg-[#140a03]/60 p-5"
             >
               <span className="grid h-11 w-11 place-items-center rounded-2xl border border-orange-500/20 bg-orange-500/10 text-orange-300">

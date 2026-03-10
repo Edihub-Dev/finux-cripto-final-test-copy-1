@@ -11,6 +11,7 @@ import {
   Library,
   ScrollText,
   Shield,
+  ShieldAlert,
   Share2,
   UserPlus,
   Users,
@@ -70,9 +71,9 @@ export default function AppDock() {
 
   const items = useMemo(() => {
     const ecosystemNavLinks = [
-      { label: "Ecosystem", target: "top" },
-      { label: "Network", target: "network" },
-      { label: "Security", target: "security" },
+      { label: "Tokens", target: "tokens" },
+      { label: "Wallet", target: "wallet" },
+      { label: "Dexs", target: "dexs" },
       { label: "Economics", target: "economics" },
     ];
 
@@ -84,23 +85,23 @@ export default function AppDock() {
     ];
 
     const earnNavLinks = [
-      { label: "Earn", target: "top", Icon: HandCoins },
+      { label: "Staking", target: "staking", Icon: HandCoins },
+      { label: "Rewards", target: "rewards", Icon: Bell },
       { label: "Community", target: "community", Icon: Users },
-      { label: "Audits", target: "audits" },
+      { label: "Audits", target: "audits", Icon: ShieldAlert },
     ];
 
     const communityNavLinks = [
       { label: "Referral", target: "referral" },
-      { label: "Community", target: "top" },
       { label: "Guidelines", target: "guidelines" },
       { label: "About", target: "about" },
     ];
 
     const finuxWalletLinks = [
-      { label: "Home", target: "home" },
-      { label: "Ecosystem", target: "/ecosystem" },
-      { label: "Community", target: "/community" },
-      { label: "Earn", target: "/earn" },
+      { label: "Ownership", target: "ownership" },
+      { label: "Sec. & Respo.", target: "security-responsibility" },
+      { label: "Staking & Rewards", target: "staking-rewards" },
+      { label: "Wallet Requirement", target: "wallet-requirement" },
     ];
 
     const routeNavLinks = {
@@ -126,12 +127,16 @@ export default function AppDock() {
       if (key.includes("network")) return <Share2 size={18} />;
       if (key.includes("security")) return <Shield size={18} />;
       if (key.includes("econom")) return <BarChart3 size={18} />;
+      if (key.includes("token")) return <Leaf size={18} />;
+      if (key.includes("dex")) return <Share2 size={18} />;
       if (key.includes("documentation")) return <BookOpen size={18} />;
       if (key.includes("updates")) return <Bell size={18} />;
       if (key === "faq") return <HelpCircle size={18} />;
       if (key.includes("referral")) return <UserPlus size={18} />;
       if (key.includes("guideline")) return <ScrollText size={18} />;
       if (key === "about") return <Info size={18} />;
+      if (key.includes("staking")) return <HandCoins size={18} />;
+      if (key.includes("reward")) return <Bell size={18} />;
       if (key === "earn") return <HandCoins size={18} />;
       if (key === "community") return <Users size={18} />;
       if (key === "home") return <Leaf size={18} />;
@@ -223,7 +228,7 @@ export default function AppDock() {
       panelHeight={isSectionRoute ? (isMobile ? 68 : 78) : 68}
       baseItemSize={isSectionRoute ? (isMobile ? 50 : 54) : 50}
       baseItemWidth={isSectionRoute && !isMobile ? 170 : undefined}
-      autoHide={isSectionRoute}
+      autoHide={false}
       autoHideDelayMs={1600}
       routeKey={path}
     />

@@ -56,10 +56,16 @@ const Ecosystem = () => {
       <main className="w-full">
         <EcosystemHero />
 
-        <EcosystemTokenSection />
+        <div id="tokens" className="scroll-mt-28">
+          <EcosystemTokenSection />
+        </div>
 
-        <div id="security" className="scroll-mt-28">
+        <div id="wallet" className="scroll-mt-28">
+          <div id="security" />
           <NonCustodialSecurity />
+        </div>
+
+        <div id="dexs" className="scroll-mt-28">
           <LiquidityInteractions />
         </div>
 

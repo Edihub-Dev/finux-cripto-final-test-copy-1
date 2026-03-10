@@ -30,88 +30,94 @@ const LandingFooter = () => {
 
           <div className="footer-links">
             <div className="footer-column">
-              <h3>Main pages</h3>
+              <h3>Ecosystem</h3>
               <ul>
                 <li>
-                  <a href="#preview">Preview</a>
+                  <a href="/ecosystem#tokens">Tokens</a>
                 </li>
                 <li>
-                  <a href="#home-v1">Home V1</a>
+                  <a href="/ecosystem#wallet">Wallet</a>
                 </li>
                 <li>
-                  <a href="#home-v2">Home V2</a>
+                  <a href="/ecosystem#dexs">Dexs</a>
                 </li>
                 <li>
-                  <a href="#home-v3">Home V3</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  <a href="#team">Team member</a>
-                </li>
-                <li>
-                  <a href="#features">Features</a>
+                  <a href="/ecosystem#economics">Economics</a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h3>&nbsp;</h3>
+              <h3>Earn</h3>
               <ul>
                 <li>
-                  <a href="#cryptos">Cryptos</a>
+                  <a href="/earn#staking">Staking</a>
                 </li>
                 <li>
-                  <a href="#crypto-single">Crypto single</a>
+                  <a href="/earn#rewards">Rewards</a>
                 </li>
                 <li>
-                  <a href="#blog-v1">Blog V1</a>
+                  <a href="/earn#audits">Audits</a>
                 </li>
                 <li>
-                  <a href="#blog-v2">Blog V2</a>
-                </li>
-                <li>
-                  <a href="#blog-v3">Blog V3</a>
-                </li>
-                <li>
-                  <a href="#blog-post">Blog post</a>
-                </li>
-                <li>
-                  <a href="#careers">Careers</a>
+                  <a href="/earn#community">Community</a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h3>&nbsp;</h3>
+              <h3>Community</h3>
               <ul>
                 <li>
-                  <a href="#career-single">Career single</a>
+                  <a href="/community#referral">Referral</a>
                 </li>
                 <li>
-                  <a href="#pricing">Pricing</a>
+                  <a href="/community#guidelines">Guidelines</a>
                 </li>
                 <li>
-                  <a href="#contact-v1">Contact V1</a>
-                </li>
-                <li>
-                  <a href="#contact-v2">Contact V2</a>
-                </li>
-                <li>
-                  <a href="#contact-v3">Contact V3</a>
-                </li>
-                <li>
-                  <a href="#coming-soon">Coming soon</a>
+                  <a href="/community#about">About</a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h3>Utility pages</h3>
+              <h3>Resources</h3>
               <ul>
                 <li>
-                  <a href="#404">404 not found</a>
+                  <a href="/resources#documentation">Documentation</a>
+                </li>
+                <li>
+                  <a href="/resources#security">Security</a>
+                </li>
+                <li>
+                  <a href="/resources#updates">Updates</a>
+                </li>
+                <li>
+                  <a href="/resources#faq">FAQ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer-column">
+              <h3>Finux Wallet</h3>
+              <ul>
+                <li>
+                  <a href="/finux-wallet#ownership">Ownership</a>
+                </li>
+                <li>
+                  <a href="/finux-wallet#security-responsibility">
+                    Sec. &amp; Respo.
+                  </a>
+                </li>
+                <li>
+                  <a href="/finux-wallet#staking-rewards">
+                    Staking &amp; Rewards
+                  </a>
+                </li>
+                <li>
+                  <a href="/finux-wallet#wallet-requirement">
+                    Wallet Requirement
+                  </a>
                 </li>
               </ul>
             </div>

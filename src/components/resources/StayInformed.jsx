@@ -31,9 +31,9 @@ const StayInformed = () => {
             Download FINUX Wallet
           </button>
 
-          <p className="mt-4 text-xs text-[#CBAD90]/60">
+          {/* <p className="mt-4 text-xs text-[#CBAD90]/60">
             Available on iOS, Android &amp; Chrome
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

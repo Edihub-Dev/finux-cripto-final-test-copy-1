@@ -1,3 +1,5 @@
+import welcomeScreenImage from "../../assets/Welcome screen.svg";
+
 const LandingMain = ({
   activeHowItWorksStep,
   appRatings,
@@ -324,11 +326,11 @@ const LandingMain = ({
           <div className="app-promo__visual" role="presentation">
             <div className="app-promo__phone">
               <img
-                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+                src={welcomeScreenImage}
                 alt="Hand holding smartphone"
                 loading="lazy"
               />
-              <ul className="app-promo__orbit" aria-hidden="true">
+              {/* <ul className="app-promo__orbit" aria-hidden="true">
                 {orbitIcons.map((icon, index) => (
                   <li
                     key={icon.name}
@@ -339,7 +341,7 @@ const LandingMain = ({
                     <img src={icon.src} alt={icon.name} loading="lazy" />
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

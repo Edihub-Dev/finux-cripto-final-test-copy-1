@@ -95,6 +95,16 @@ export default function Dock({
   const [isFooterVisible, setIsFooterVisible] = useState(false);
   const hideTimerRef = useRef(null);
   const dockOuterRef = useRef(null);
+  const isVisibleRef = useRef(isVisible);
+  const isFooterVisibleRef = useRef(isFooterVisible);
+
+  useEffect(() => {
+    isVisibleRef.current = isVisible;
+  }, [isVisible]);
+
+  useEffect(() => {
+    isFooterVisibleRef.current = isFooterVisible;
+  }, [isFooterVisible]);
 
   // Footer detection effect: hide dock when it touches/overlaps the footer
   useEffect(() => {
@@ -129,7 +139,10 @@ export default function Dock({
       const footerInViewport =
         footerRect.top < window.innerHeight && footerRect.bottom > 0;
 
-      setIsFooterVisible(Boolean(overlaps && footerInViewport));
+      const next = Boolean(overlaps && footerInViewport);
+      if (next !== isFooterVisibleRef.current) {
+        setIsFooterVisible(next);
+      }
     };
 
     const scheduleCheck = () => {
@@ -162,11 +175,6 @@ export default function Dock({
   }, [routeKey]);
 
   useEffect(() => {
-    if (!autoHide) {
-      setIsVisible(true);
-      return;
-    }
-
     if (isFooterVisible) {
       setIsVisible(false);
       if (hideTimerRef.current) {
@@ -175,13 +183,22 @@ export default function Dock({
       return;
     }
 
-    const showThenScheduleHide = () => {
+    if (!autoHide) {
       setIsVisible(true);
+      return;
+    }
+
+    const showThenScheduleHide = () => {
+      if (!isVisibleRef.current) {
+        setIsVisible(true);
+      }
       if (hideTimerRef.current) {
         window.clearTimeout(hideTimerRef.current);
       }
       hideTimerRef.current = window.setTimeout(() => {
-        setIsVisible(false);
+        if (isVisibleRef.current) {
+          setIsVisible(false);
+        }
       }, autoHideDelayMs);
     };
 

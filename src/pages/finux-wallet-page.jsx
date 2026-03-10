@@ -26,19 +26,19 @@ const Landing = () => {
           <Hero />
         </div>
 
-        <div className="scroll-mt-28" id="ecosystem">
+        <div className="scroll-mt-28" id="ownership">
           <Features />
         </div>
 
-        <div className="scroll-mt-28" id="community">
+        <div className="scroll-mt-28" id="security-responsibility">
           <Security />
         </div>
 
-        <div className="scroll-mt-28" id="earn">
+        <div className="scroll-mt-28" id="staking-rewards">
           <Staking />
         </div>
 
-        <div className="scroll-mt-28" id="resources">
+        <div className="scroll-mt-28" id="wallet-requirement">
           <WalletRequirements />
         </div>
 

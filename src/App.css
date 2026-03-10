@@ -4665,6 +4665,18 @@ body.landing-page .hero__visual {
   transform: none !important;
 }
 
+.earn-dual-container[data-animate] {
+  opacity: 1;
+
+  transform: none;
+}
+
+.earn-dual-container[data-animate].is-visible {
+  opacity: 1;
+
+  transform: none;
+}
+
 /* So nav and header content do not get clipped around tablet / small desktop widths */
 
 @media (max-width: 1400px) {
@@ -5198,7 +5210,9 @@ body.landing-page .hero__visual {
   }
 
   .footer-links {
-    flex-direction: column;
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
 
     gap: 2rem;
   }

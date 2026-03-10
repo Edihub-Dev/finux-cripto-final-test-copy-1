@@ -72,7 +72,7 @@ const EcosystemTokenSection = () => {
             </div>
 
             <div className="relative flex h-full w-full items-center justify-center">
-              <Cuboid className="h-16 w-16 text-[#FF8A00] sm:h-20 sm:w-20" />
+              <Cuboid className="h-24 w-24 text-[#FF8A00] sm:h-36 sm:w-36" />
             </div>
           </div>
         </div>

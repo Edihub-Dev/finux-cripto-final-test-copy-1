@@ -57,10 +57,19 @@ const Earn = () => {
 
       <main className="w-full">
         <EarnHero />
-        <EarnStakingStability />
-        <EarnLiquidityContribution />
-        <EarnDualIncome />
-        <EarnRewardsConditions />
+
+        <div id="staking" className="scroll-mt-28">
+          <EarnStakingStability />
+          <EarnLiquidityContribution />
+        </div>
+
+        <div id="income" className="scroll-mt-28">
+          <EarnDualIncome />
+        </div>
+
+        <div id="rewards" className="scroll-mt-28">
+          <EarnRewardsConditions />
+        </div>
         <EarnHorizontalFeatureStrip />
 
         <div id="community" className="scroll-mt-20 sm:scroll-mt-28">
