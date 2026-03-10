@@ -3865,6 +3865,28 @@ body.landing-page .coin-cloud {
   z-index: 2;
 }
 
+@media (min-width: 769px) {
+  .how-it-works__surface {
+    max-width: 1320px;
+  }
+
+  .how-it-works__panel {
+    min-height: 520px;
+  }
+
+  .how-it-works__panel-content {
+    flex: 0 1 340px;
+  }
+
+  .how-it-works__panel-visual {
+    flex: 1 1 920px;
+  }
+
+  .how-it-works__panel-visual img {
+    max-height: none;
+  }
+}
+
 .how-it-works__panel-content h3 {
   margin: 0 0 0.65rem;
 
@@ -4035,7 +4057,7 @@ body.landing-page .coin-cloud {
   }
 
   .how-it-works__panel-visual img {
-    max-width: 320px;
+    max-width: 100%;
 
     height: auto;
 
