@@ -1458,7 +1458,7 @@ body.landing-page main {
 
   padding-block-end: clamp(2rem, 4vw, 3.25rem);
 
-  min-height: 100vh;
+  min-height: min(100vh, 820px);
 
   background:
     radial-gradient(
@@ -1582,7 +1582,7 @@ body.landing-page .hero-surface__content {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .wallet-nav-spacer {
     display: block;
 
@@ -2145,7 +2145,7 @@ body.ecosystem-page .wallet-nav.wallet-nav--scrolled {
   transform: translateY(-120%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .wallet-nav.wallet-nav--hidden {
     transform: translateY(0);
   }
@@ -2287,7 +2287,7 @@ body.ecosystem-page .wallet-nav.wallet-nav--scrolled {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   body.resources-page .wallet-nav.wallet-nav--hidden {
     transform: translateY(0);
   }
@@ -2297,7 +2297,7 @@ body.ecosystem-page .wallet-nav.wallet-nav--scrolled {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   body.resources-page .wallet-nav {
     position: fixed !important;
 
@@ -2568,7 +2568,7 @@ body.ecosystem-page .wallet-nav.wallet-nav--scrolled {
   pointer-events: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .wallet-nav__links {
     display: none;
   }
@@ -2578,6 +2578,20 @@ body.ecosystem-page .wallet-nav.wallet-nav--scrolled {
   }
 
   /* Hide primary CTA in top bar on small screens; it will be accessible via drawer links */
+
+  .wallet-nav__download {
+    display: none;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 800px) {
+  .wallet-nav__toggle {
+    display: flex;
+  }
+
+  .wallet-nav__links {
+    display: none;
+  }
 
   .wallet-nav__download {
     display: none;
@@ -5720,5 +5734,24 @@ body.landing-page .coin-cloud {
 
   .nav__download {
     display: inline-flex;
+  }
+}
+
+@media (max-width: 930px) {
+  .wallet-nav__toggle {
+    display: flex !important;
+  }
+
+  .wallet-nav__links {
+    display: none !important;
+  }
+
+  .wallet-nav__download {
+    display: none !important;
+  }
+
+  .wallet-nav-drawer,
+  .wallet-nav-drawer__backdrop {
+    display: block !important;
   }
 }
