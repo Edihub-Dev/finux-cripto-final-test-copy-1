@@ -121,6 +121,14 @@ const LandingFooter = () => {
                 </li>
               </ul>
             </div>
+             <div className="footer-column">
+              <h3>Contect US</h3>
+              <ul>
+                <li>
+                  <a href="mailto:finuxtech@protonmail.com">Email: finuxtech@protonmail.com</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

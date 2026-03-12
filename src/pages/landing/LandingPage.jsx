@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import cardAccent from "../../assets/B0uUXSq0m868oLBfPN2rG3lJCho copy 1.svg";
-import transferIcon from "../../assets/kK10BYW7A0IyokkZjS6BKJ8VE copy 1.svg";
-import analyticsIcon from "../../assets/z95dq6ks9unrjAjIFNFdd0B3BOE copy 1.svg";
+import cardAccent from "../../assets/23df2321 2.png";
+import transferIcon from "../../assets/121re231d 1.png";
+import analyticsIcon from "../../assets/wefc32r 1.png";
 import lockIcon from "../../assets/0dMWvmHmtJtNLyahKB5B0HErpIE copy 1.svg";
 import goldIcon from "../../assets/3lQ7907y7C6l2ACYCAQKDOQVYg copy 1.svg";
 import stackIcon from "../../assets/kFW9oB0lpLbUlaE5PRMjFjfn0Qc copy 1.svg";

@@ -1,5 +1,7 @@
 import { CheckCircle2, Wallet } from "lucide-react";
 
+import HomeImage from "../../assets/eco.png";
+
 const features = [
   "High quality encryption for private keyss",
   "Built-in dApp browser and Web3 support",
@@ -22,39 +24,12 @@ const NonCustodialSecurity = () => {
         data-animate
       >
         <div className="w-full lg:w-[55%]">
-          <div className="ecosystem-wallet__card group relative rounded-[28px] border border-[rgba(255,140,0,0.2)] bg-[#20160E] p-[18px] shadow-[0_0_60px_rgba(255,140,0,0.06)] transition duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_80px_rgba(255,140,0,0.1)] sm:p-[22px]">
-            <div className="pointer-events-none absolute inset-0 rounded-[28px] bg-[radial-gradient(circle_at_20%_35%,rgba(255,140,0,0.10),transparent_58%)] opacity-70" />
-
-            <div className="relative overflow-hidden rounded-[22px] border border-[rgba(255,255,255,0.06)] bg-[#1B130C] shadow-[inset_0_0_0_1px_rgba(255,140,0,0.08)]">
-              <div className="flex h-[44px] items-center justify-between border-b border-[rgba(255,255,255,0.06)] bg-[#24180F] px-4">
-                <div className="flex items-center gap-2">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-                </div>
-
-                <span className="h-8 w-8 rounded-full bg-[rgba(255,255,255,0.08)]" />
-              </div>
-
-              <div className="p-6 sm:p-7">
-                <div className="mb-6 h-3 w-36 rounded-full bg-[rgba(255,255,255,0.08)]" />
-
-                <div className="rounded-[16px] border border-[rgba(255,140,0,0.18)] bg-[#1A120B] px-6 py-7 text-center shadow-[0_0_0_1px_rgba(255,255,255,0.03)]">
-                  <p className="text-[13px] text-[rgba(255,255,255,0.65)]">
-                    Total Balance
-                  </p>
-                  <p className="mt-2 text-[34px] font-bold leading-none text-white">
-                    $24,593.00
-                  </p>
-                </div>
-
-                <div className="mt-6 space-y-[14px]">
-                  <div className="h-[54px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[#22170F]/55" />
-                  <div className="h-[54px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[#22170F]/45" />
-                  <div className="h-[54px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[#22170F]/38" />
-                </div>
-              </div>
-            </div>
+          <div className="mx-auto w-full max-w-[320px] sm:max-w-[400px] md:max-w-[480px] lg:max-w-[520px]">
+            <img
+              src={HomeImage}
+              alt="Wallet preview"
+              className="block h-[320px] w-full object-contain object-center sm:h-[380px] md:h-[450px] lg:h-[520px]"
+            />
           </div>
         </div>
 
@@ -78,12 +53,12 @@ const NonCustodialSecurity = () => {
             {features.map((text) => (
               <div
                 key={text}
-                className="flex items-center justify-start gap-3 text-left"
+                className="flex w-full items-start justify-start gap-3 text-left"
               >
-                <span className="grid h-5 w-5 shrink-0 place-items-center text-[#FF8A00] drop-shadow-[0_0_10px_rgba(255,140,0,0.4)]">
+                <span className="mt-[2px] grid h-5 w-5 shrink-0 place-items-center text-[#FF8A00] drop-shadow-[0_0_10px_rgba(255,140,0,0.4)]">
                   <CheckCircle2 className="h-5 w-5" />
                 </span>
-                <p className="m-0 text-[15px] leading-[1.55] text-[rgba(255,255,255,0.85)] md:whitespace-nowrap">
+                <p className="m-0 text-[15px] leading-[1.55] text-[rgba(255,255,255,0.85)]">
                   {text}
                 </p>
               </div>
