@@ -33,7 +33,6 @@
   padding: 0 0.5rem 0.5rem;
   overflow-x: auto;
   overflow-y: visible;
-  scrollbar-width: none;
 }
 
 .dock-panel.dock-panel--ecosystem {
@@ -49,8 +48,17 @@
   overflow-y: visible;
 }
 
-.dock-panel::-webkit-scrollbar {
-  display: none;
+
+
+
+@media (max-width: 767.98px) {
+  .dock-panel {
+    scrollbar-width: none;
+  }
+
+  .dock-panel::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .dock-item {

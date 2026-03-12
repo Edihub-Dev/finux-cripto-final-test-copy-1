@@ -85,51 +85,30 @@ body {
 
 
   overflow-x: visible;
-
-
-
-  -ms-overflow-style: none;
-
-
-
-  scrollbar-width: none;
-
 }
 
 
 
-body::-webkit-scrollbar {
+@media (max-width: 767.98px) {
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
-  width: 0;
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 
+  html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
-
-  height: 0;
-
-}
-
-
-
-html {
-
-  -ms-overflow-style: none;
-
-
-
-  scrollbar-width: none;
-
-}
-
-
-
-html::-webkit-scrollbar {
-
-  width: 0;
-
-
-
-  height: 0;
-
+  html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 
 
@@ -143,97 +122,29 @@ body.has-dock {
 
 
 html.landing-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: visible;
-
-
-
-  overflow-y: auto !important;
-
 }
 
 
 
 body.landing-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: visible;
-
-
-
-  overflow-y: auto !important;
-
 }
 
 
 
 html.resources-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
   box-sizing: border-box;
-
-
-
   width: calc(100vw - (100vw - 100%));
-
-
-
   max-width: 100%;
-
-
-
-  overflow-y: auto !important;
-
 }
 
 
 
 body.resources-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
-
-
   background: #201810 !important;
-
 }
 
 
@@ -303,45 +214,14 @@ body.resources-page main {
 
 
 html.ecosystem-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
 }
 
 
 
 body.ecosystem-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
-
-
   background: #16100a !important;
-
 }
 
 
@@ -411,487 +291,227 @@ body.ecosystem-page main {
 
 
 html.earn-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
 }
 
 
 
 body.earn-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
-
-
   background:
-
     radial-gradient(
-
       circle at top left,
-
-
-
       rgba(255, 140, 50, 0.18),
-
       transparent 48%
-
     ),
-
     linear-gradient(145deg, #2c1404 10%, #1a0902 60%, #120b05 100%) !important;
-
 }
 
 
 
 html.earn-page #root,
-
 body.earn-page #root,
-
 body.earn-page .earn-shell {
-
   min-height: 100vh;
-
-
-
   background:
-
     radial-gradient(
-
       circle at top left,
-
-
-
       rgba(255, 140, 50, 0.18),
-
       transparent 48%
-
     ),
-
     linear-gradient(145deg, #2c1404 10%, #1a0902 60%, #120b05 100%) !important;
-
 }
 
 
 
 body.earn-page .earn-shell {
-
   position: relative;
-
-
-
   isolation: isolate;
-
 }
 
 
 
 body.earn-page .earn-shell::before {
-
   content: "";
-
-
-
   position: absolute;
-
-
-
   inset: 0;
-
-
-
   background:
-
     radial-gradient(
-
       circle at 20% 15%,
-
-
-
       rgba(255, 140, 50, 0.12),
-
       transparent 55%
-
     ),
-
     radial-gradient(
-
       circle at 80% 25%,
-
-
-
       rgba(255, 179, 71, 0.08),
-
       transparent 60%
-
     );
-
-
-
   pointer-events: none;
-
-
-
   z-index: -1;
-
 }
 
 
 
 body.earn-page main {
-
   background: transparent !important;
-
 }
 
 
 
 body.earn-page .earn-dual-container {
-
   background: linear-gradient(
-
     90deg,
-
     rgba(255, 140, 0, 0.12) 0%,
-
-
-
     rgba(255, 140, 0, 0.06) 25%,
-
-
-
     #332617 50%,
-
-
-
     #332617 100%
-
   );
-
-
-
   background-size: 140% 140%;
-
-
-
   background-position: 0% 50%;
-
-
-
   animation: earn-dual-glow-pulse 6s ease-in-out infinite;
-
 }
 
 
 
 @keyframes earn-dual-glow-pulse {
-
   0% {
-
     background-position: 0% 50%;
-
   }
-
-
-
   50% {
-
     background-position: 18% 50%;
-
   }
-
-
-
   100% {
-
     background-position: 0% 50%;
-
   }
-
 }
 
 
 
 body.earn-page .earn-final-cta-button {
-
   box-shadow:
-
     0 0 25px rgba(255, 140, 0, 0.5),
-
     0 0 60px rgba(255, 140, 0, 0.25);
-
-
-
   transform: translateZ(0);
-
-
-
   animation: earn-final-cta-pulse 3s ease-in-out infinite;
-
 }
 
 
 
 body.earn-page .earn-final-cta-button:hover {
-
   transform: scale(1.05);
-
-
-
   box-shadow:
-
     0 0 30px rgba(255, 140, 0, 0.6),
-
     0 0 75px rgba(255, 140, 0, 0.3);
-
 }
 
 
 
 body.earn-page .earn-final-cta-button:active {
-
   transform: scale(0.98);
-
 }
 
 
 
 @keyframes earn-final-cta-pulse {
-
   0% {
-
     box-shadow:
-
       0 0 25px rgba(255, 140, 0, 0.5),
-
       0 0 60px rgba(255, 140, 0, 0.25);
-
   }
-
-
-
   50% {
-
     box-shadow:
-
       0 0 32px rgba(255, 140, 0, 0.62),
-
       0 0 78px rgba(255, 140, 0, 0.3);
-
   }
-
-
-
   100% {
-
     box-shadow:
-
       0 0 25px rgba(255, 140, 0, 0.5),
-
       0 0 60px rgba(255, 140, 0, 0.25);
-
   }
-
 }
 
 
 
 .ecosystem-hero__primary-cta {
-
   animation: ecosystem-hero-cta-pulse 4s ease-in-out infinite;
-
 }
 
 
 
 @keyframes ecosystem-hero-cta-pulse {
-
   0%,
-
   100% {
-
     box-shadow:
-
       0 0 25px rgba(255, 140, 0, 0.45),
-
       0 0 60px rgba(255, 140, 0, 0.22);
-
   }
-
-
-
   50% {
-
     box-shadow:
-
       0 0 30px rgba(255, 140, 0, 0.55),
-
       0 0 70px rgba(255, 140, 0, 0.26);
-
   }
-
 }
 
 
 
 .ecosystem-token__rings {
-
   animation: ecosystem-token-rings-pulse 6s ease-in-out infinite;
-
 }
 
 
 
 @keyframes ecosystem-token-rings-pulse {
-
   0%,
-
   100% {
-
     transform: scale(1);
-
-
-
     opacity: 0.95;
-
   }
-
-
-
   50% {
-
     transform: scale(1.03);
-
-
-
     opacity: 1;
-
   }
-
 }
 
 
 
 .ecosystem-wallet__card {
-
   animation: ecosystem-wallet-glow-pulse 6s ease-in-out infinite;
-
 }
 
 
 
 @keyframes ecosystem-wallet-glow-pulse {
-
   0%,
-
   100% {
-
     box-shadow: 0 0 60px rgba(255, 140, 0, 0.06);
-
   }
-
-
-
   50% {
-
     box-shadow: 0 0 70px rgba(255, 140, 0, 0.1);
-
   }
-
 }
 
 
 
 html.community-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
 }
 
 
 
 body.community-page {
-
-  height: 100% !important;
-
-
-
-  min-height: 100%;
-
-
-
   overflow-x: hidden;
-
-
-
-  overflow-y: auto !important;
-
-
-
   background:
-
     radial-gradient(
-
       ellipse at 85% 12%,
-
-
-
       rgba(255, 140, 50, 0.12),
-
       transparent 45%
-
     ),
-
     radial-gradient(
-
       circle at 50% 45%,
-
-
-
       rgba(0, 0, 0, 0.55),
-
       rgba(0, 0, 0, 0.98) 78%
-
     ),
-
     linear-gradient(135deg, #1a0b05 0%, #23120a 55%, #150f0a 100%) !important;
-
 }
 
 
