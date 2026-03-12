@@ -14,6 +14,8 @@ import EarnAudits from "../components/earn/EarnAudits.jsx";
 import EarnStart from "../components/earn/EarnStart.jsx";
 import EarnFooter from "../components/earn/EarnFooter.jsx";
 
+import FloatingSocialButtons from "../components/shared/FloatingSocialButtons.jsx";
+
 const Earn = () => {
   useEffect(() => {
     document.documentElement.classList.add("earn-page");
@@ -84,6 +86,7 @@ const Earn = () => {
       </main>
 
       <EarnFooter />
+      <FloatingSocialButtons />
     </div>
   );
 };

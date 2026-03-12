@@ -11,6 +11,8 @@ import CommunityHighlights from "../components/community/CommunityHighlights.jsx
 import JoinCommunity from "../components/community/JoinCommunity.jsx";
 import CommunityFooter from "../components/community/CommunityFooter.jsx";
 
+import FloatingSocialButtons from "../components/shared/FloatingSocialButtons.jsx";
+
 const Community = () => {
   useEffect(() => {
     document.documentElement.classList.add("community-page");
@@ -53,6 +55,7 @@ const Community = () => {
       </main>
 
       <CommunityFooter />
+      <FloatingSocialButtons />
     </div>
   );
 };

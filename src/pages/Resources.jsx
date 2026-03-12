@@ -10,6 +10,8 @@ import ResourcesFooter from "../components/resources/ResourcesFooter.jsx";
 import LandingNavbar from "./landing/LandingNavbar.jsx";
 import { navLinks } from "./landing/landingData.js";
 
+import FloatingSocialButtons from "../components/shared/FloatingSocialButtons.jsx";
+
 const Resources = () => {
   useEffect(() => {
     document.documentElement.classList.add("resources-page");
@@ -53,6 +55,7 @@ const Resources = () => {
       </main>
 
       <ResourcesFooter />
+      <FloatingSocialButtons />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import Staking from "../components/finux-wallet-staking.jsx";
 import WalletRequirements from "../components/finux-wallet-requirements.jsx";
 import CTA from "../components/finux-wallet-cta.jsx";
 import Footer from "../components/finux-wallet-footer.jsx";
+import FloatingSocialButtons from "../components/shared/FloatingSocialButtons.jsx";
 
 const Landing = () => {
   return (
@@ -50,6 +51,7 @@ const Landing = () => {
       <div className="scroll-mt-28" id="legal">
         <Footer />
       </div>
+      <FloatingSocialButtons />
     </div>
   );
 };

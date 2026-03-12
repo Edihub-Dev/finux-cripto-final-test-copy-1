@@ -12,6 +12,8 @@ import FeatureHighlightsStrip from "../components/shared/FeatureHighlightsStrip.
 import ExploreEcosystem from "../components/ecosystem/ExploreEcosystem.jsx";
 import EcosystemFooter from "../components/ecosystem/EcosystemFooter.jsx";
 
+import FloatingSocialButtons from "../components/shared/FloatingSocialButtons.jsx";
+
 const Ecosystem = () => {
   useEffect(() => {
     document.documentElement.classList.add("ecosystem-page");
@@ -79,6 +81,7 @@ const Ecosystem = () => {
       </main>
 
       <EcosystemFooter />
+      <FloatingSocialButtons />
     </div>
   );
 };
