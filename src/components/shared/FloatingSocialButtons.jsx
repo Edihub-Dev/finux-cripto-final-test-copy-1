@@ -1,6 +1,39 @@
+import { useEffect, useRef, useState } from "react";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 const FloatingSocialButtons = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const scrollTimerRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(true);
+
+      if (scrollTimerRef.current) {
+        clearTimeout(scrollTimerRef.current);
+      }
+
+      scrollTimerRef.current = setTimeout(() => {
+        setIsVisible(false);
+      }, 800);
+    };
+
+    const handleMouseMove = () => {
+      setIsVisible(true);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
+      if (scrollTimerRef.current) {
+        clearTimeout(scrollTimerRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
       style={{
@@ -11,6 +44,10 @@ const FloatingSocialButtons = () => {
         flexDirection: "column",
         gap: 14,
         zIndex: 50,
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(20px)",
+        transition: "opacity 0.3s ease, transform 0.3s ease",
+        pointerEvents: isVisible ? "auto" : "none",
       }}
       aria-label="Quick contact"
     >
