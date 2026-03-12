@@ -3040,6 +3040,18 @@ body.landing-page .hero-surface__content {
 
 
 
+@media (min-width: 769px) {
+
+  .hero-surface {
+
+    min-height: auto;
+
+  }
+
+}
+
+
+
 .nav {
 
   display: flex;
