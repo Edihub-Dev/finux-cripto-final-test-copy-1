@@ -188,39 +188,49 @@ export default function Dock({
       return;
     }
 
-    const showThenScheduleHide = () => {
-      if (!isVisibleRef.current) {
-        setIsVisible(true);
-      }
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 8;
+
       if (hideTimerRef.current) {
         window.clearTimeout(hideTimerRef.current);
       }
+
+      if (!scrolled) {
+        setIsVisible(true);
+        return;
+      }
+
+      if (!isVisibleRef.current) {
+        setIsVisible(true);
+      }
+
       hideTimerRef.current = window.setTimeout(() => {
-        if (isVisibleRef.current) {
+        if (window.scrollY > 8) {
           setIsVisible(false);
         }
       }, autoHideDelayMs);
     };
 
-    showThenScheduleHide();
+    const handleMouseMove = () => {
+      if (window.scrollY <= 8) return;
+      setIsVisible(true);
+    };
 
-    window.addEventListener("scroll", showThenScheduleHide, { passive: true });
-    document.addEventListener("scroll", showThenScheduleHide, {
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    document.addEventListener("scroll", handleScroll, {
       passive: true,
       capture: true,
     });
-    window.addEventListener("mousemove", showThenScheduleHide, {
-      passive: true,
-    });
-    window.addEventListener("touchmove", showThenScheduleHide, {
-      passive: true,
-    });
+    window.addEventListener("touchmove", handleScroll, { passive: true });
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", showThenScheduleHide);
-      document.removeEventListener("scroll", showThenScheduleHide, true);
-      window.removeEventListener("mousemove", showThenScheduleHide);
-      window.removeEventListener("touchmove", showThenScheduleHide);
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("scroll", handleScroll, true);
+      window.removeEventListener("touchmove", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
       if (hideTimerRef.current) {
         window.clearTimeout(hideTimerRef.current);
       }

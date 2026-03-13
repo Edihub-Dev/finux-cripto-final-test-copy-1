@@ -228,8 +228,8 @@ export default function AppDock() {
       panelHeight={isSectionRoute ? (isMobile ? 68 : 78) : 68}
       baseItemSize={isSectionRoute ? (isMobile ? 50 : 54) : 50}
       baseItemWidth={isSectionRoute && !isMobile ? 170 : undefined}
-      autoHide={false}
-      autoHideDelayMs={1600}
+      autoHide={isSectionRoute}
+      autoHideDelayMs={800}
       routeKey={path}
     />
   );
