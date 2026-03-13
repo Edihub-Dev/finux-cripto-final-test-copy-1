@@ -53,8 +53,11 @@ const EarnLiquidityContribution = () => {
             </div>
           </div>
 
-          <div data-animate className="order-1 text-left lg:order-2">
-            <div className="flex items-center justify-start">
+          <div
+            data-animate
+            className="order-1 text-center lg:order-2 lg:text-left"
+          >
+            <div className="flex items-center justify-center lg:justify-start">
               <div className="mb-5 grid h-[60px] w-[60px] place-items-center rounded-full border border-[rgba(255,140,0,0.4)] bg-[rgba(255,140,0,0.1)] text-[#FF8A00] shadow-[0_0_24px_rgba(255,140,0,0.14)]">
                 <Droplets className="h-6 w-6" />
               </div>
@@ -64,7 +67,7 @@ const EarnLiquidityContribution = () => {
               Liquidity Pools
             </h2>
 
-            <p className="mt-5 max-w-[520px] text-[16px] leading-[1.7] text-[#CBAD90]">
+            <p className="mt-5 mx-auto max-w-[520px] text-[16px] leading-[1.7] text-[#CBAD90] lg:mx-0">
               Liquidity pools allow users to provide FNX and stablecoins to
               support ecosystem trading. <br className="hidden sm:inline" />
               <br className="sm:hidden" />
@@ -75,7 +78,7 @@ const EarnLiquidityContribution = () => {
 
             <a
               href="#"
-              className="group mt-[30px] inline-flex items-center gap-4 text-[16px] font-semibold text-[#FF8A00] no-underline transition duration-300 hover:no-underline hover:drop-shadow-[0_0_10px_rgba(255,140,0,0.25)] focus:no-underline"
+              className="group mt-[30px] inline-flex items-center justify-center gap-4 text-[16px] font-semibold text-[#FF8A00] no-underline transition duration-300 hover:no-underline hover:drop-shadow-[0_0_10px_rgba(255,140,0,0.25)] focus:no-underline lg:justify-start"
             >
               <span className="transition duration-300">View Active Pools</span>
               <ArrowRight

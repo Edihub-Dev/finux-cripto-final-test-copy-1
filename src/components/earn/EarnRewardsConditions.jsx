@@ -44,9 +44,9 @@ const EarnRewardsConditions = () => {
             <article
               data-animate
               key={title}
-              className="rounded-[28px] border border-[rgba(255,140,0,0.15)] bg-[#1E160E] p-6 transition-all duration-300 hover:-translate-y-[6px] hover:border-[#FF8A00] hover:shadow-[0_0_30px_rgba(255,140,0,0.2)] sm:p-8 lg:p-10"
+              className="rounded-[28px] border border-[rgba(255,140,0,0.15)] bg-[#1E160E] p-6 text-center transition-all duration-300 hover:-translate-y-[6px] hover:border-[#FF8A00] hover:shadow-[0_0_30px_rgba(255,140,0,0.2)] sm:p-8 sm:text-left lg:p-10"
             >
-              <div className="grid h-[50px] w-[50px] place-items-center rounded-full border border-[rgba(255,140,0,0.3)] bg-[rgba(255,140,0,0.08)] text-[#FF8A00] sm:h-[60px] sm:w-[60px]">
+              <div className="mx-auto grid h-[50px] w-[50px] place-items-center rounded-full border border-[rgba(255,140,0,0.3)] bg-[rgba(255,140,0,0.08)] text-[#FF8A00] sm:mx-0 sm:h-[60px] sm:w-[60px]">
                 <Icon className="h-5 w-5" />
               </div>
 

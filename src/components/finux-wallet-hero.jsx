@@ -60,7 +60,7 @@ const Hero = () => {
       className={`pt-4 sm:pt-20 lg:pt-28 ${isInView ? "reveal-in" : "reveal"}`}
     >
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-        <div className="w-full max-w-xl">
+        <div className="w-full max-w-xl text-center sm:text-left">
           <div className="inline-flex items-center gap-2 rounded-full border-2 border-[rgb(242_127_13_/_1)] bg-black/20 px-3 py-1 text-[11px] font-semibold tracking-[0.22em] text-[rgb(242_127_13_/_1)] shadow-[0_0_0_1px_rgba(242,127,13,0.2),0_12px_30px_rgba(0,0,0,0.35)]">
             Introducing Finux
           </div>
@@ -75,12 +75,12 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="mt-5 max-w-[46ch] text-base leading-7 text-[rgb(203_173_144/1)] sm:text-[15px]">
+          <p className="mx-auto mt-5 max-w-[46ch] text-base leading-7 text-[rgb(203_173_144/1)] sm:mx-0 sm:text-[15px]">
             Experience true non-custodial control over the keys to your assets.
             Built for long-term security and seamless ecosystem access.
           </p>
 
-          <div className="mt-7 flex w-full flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mx-auto mt-7 flex w-full flex-col items-center gap-3 sm:mx-0 sm:flex-row sm:items-center">
             <button
               type="button"
               className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f27f0d] px-8 py-3 text-sm font-semibold text-black shadow-[0_18px_45px_rgba(242,127,13,0.28)] transition duration-300 hover:shadow-[0_18px_60px_rgba(242,127,13,0.42)] sm:w-auto"
@@ -100,7 +100,7 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="mt-7 flex items-center gap-4">
+          <div className="mx-auto mt-7 flex items-center justify-center gap-4 sm:mx-0 sm:justify-start">
             <div className="flex items-center">
               {avatars.map((avatar, idx) => (
                 <div

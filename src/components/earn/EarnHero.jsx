@@ -12,7 +12,7 @@ const EarnHero = () => {
 
   return (
     <section
-      className="relative flex h-[90vh] w-full items-center justify-center overflow-hidden bg-[#281C10] px-4 sm:px-6 lg:px-8"
+      className="relative flex w-full items-start justify-center overflow-hidden bg-[#281C10] px-4 pt-[45px] pb-12 sm:h-[90vh] sm:items-center sm:pt-0 sm:pb-0 sm:px-6 lg:px-8"
       style={{
         backgroundImage:
           "radial-gradient(circle at 50% 0%, rgba(255, 140, 0, 0.08), transparent 60%)",

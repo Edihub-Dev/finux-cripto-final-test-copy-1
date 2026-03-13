@@ -33,32 +33,34 @@ const SafetyNotice = () => {
             </p>
 
             <div className="mt-8 space-y-4 text-sm text-[rgb(203_173_144)] sm:text-base">
-              <div className="flex flex-nowrap items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <span className="shrink-0 text-emerald-400">
                   <CheckCircle2 className="h-4 w-4" />
                 </span>
-                <div className="flex min-w-0 flex-1 items-center gap-2 overflow-hidden whitespace-nowrap leading-6">
-                  <span className="truncate">
+                <div className="flex min-w-0 flex-1 items-center gap-2 leading-6">
+                  <span>
                     FINUX never asks for private keys.
+                  </span>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="shrink-0 text-emerald-400">
+                  <CheckCircle2 className="h-4 w-4" />
+                </span>
+                <div className="flex min-w-0 flex-1 items-center gap-2 leading-6">
+                  <span>
+                    Only download wallets from official sources.
                   </span>
                   <span className="shrink-0 inline-flex items-center rounded-full border border-orange-500/30 bg-black/20 px-2.5 py-1 text-xs font-semibold tracking-wide text-orange-200">
                     finux.online
                   </span>
                 </div>
               </div>
-              <div className="flex flex-nowrap items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <span className="shrink-0 text-emerald-400">
                   <CheckCircle2 className="h-4 w-4" />
                 </span>
-                <p className="min-w-0 flex-1 truncate whitespace-nowrap leading-6">
-                  Only download wallets from official sources.
-                </p>
-              </div>
-              <div className="flex flex-nowrap items-center gap-3">
-                <span className="shrink-0 text-emerald-400">
-                  <CheckCircle2 className="h-4 w-4" />
-                </span>
-                <p className="min-w-0 flex-1 truncate whitespace-nowrap leading-6">
+                <p className="min-w-0 flex-1 leading-6">
                   Avoid suspicious links or third-party applications.
                 </p>
               </div>

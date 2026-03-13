@@ -40,9 +40,9 @@ const EarnCommunity = () => {
           {points.map(({ title, description, Icon }) => (
             <article
               key={title}
-              className="rounded-3xl border border-orange-500/20 bg-[#140a03]/55 p-5"
+              className="rounded-3xl border border-orange-500/20 bg-[#140a03]/55 p-5 text-center md:text-left"
             >
-              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-orange-500/15 text-orange-300">
+              <span className="mx-auto grid h-11 w-11 place-items-center rounded-2xl bg-orange-500/15 text-orange-300 md:mx-0">
                 <Icon className="h-5 w-5" />
               </span>
               <h3 className="mt-4 text-sm font-semibold text-white">{title}</h3>

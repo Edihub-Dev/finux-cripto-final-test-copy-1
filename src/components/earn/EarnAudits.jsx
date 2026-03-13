@@ -37,9 +37,9 @@ const EarnAudits = () => {
           {items.map(({ title, description, Icon }, index) => (
             <article
               key={`${title}-${index}`}
-              className="rounded-3xl border border-white/10 bg-[#140a03]/60 p-5"
+              className="rounded-3xl border border-white/10 bg-[#140a03]/60 p-5 text-center md:text-left"
             >
-              <span className="grid h-11 w-11 place-items-center rounded-2xl border border-orange-500/20 bg-orange-500/10 text-orange-300">
+              <span className="mx-auto grid h-11 w-11 place-items-center rounded-2xl border border-orange-500/20 bg-orange-500/10 text-orange-300 md:mx-0">
                 <Icon className="h-5 w-5" />
               </span>
               <h3 className="mt-4 text-sm font-semibold text-white">{title}</h3>

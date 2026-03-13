@@ -85,10 +85,10 @@ const Security = () => {
               return (
                 <div
                   key={card.title}
-                  className="group relative overflow-hidden rounded-[22px] border border-[#f27f0d]/20 bg-gradient-to-b from-[#1a120b]/55 to-[#2a1a10]/35 px-6 py-5 shadow-[0_18px_55px_rgba(0,0,0,0.35)] transition-all duration-500 ease-in-out hover:scale-[1.01] hover:border-[#d96500] hover:shadow-[0_24px_70px_rgba(0,0,0,0.45)]"
+                  className="group relative overflow-hidden rounded-[22px] border border-[#f27f0d]/20 bg-gradient-to-b from-[#1a120b]/55 to-[#2a1a10]/35 px-6 py-5 text-center shadow-[0_18px_55px_rgba(0,0,0,0.35)] transition-all duration-500 ease-in-out hover:scale-[1.01] hover:border-[#d96500] hover:shadow-[0_24px_70px_rgba(0,0,0,0.45)] sm:text-left"
                 >
                   <div className="pointer-events-none absolute inset-0 rounded-[22px] transition duration-500 shadow-[inset_0_1px_0_rgba(255,255,255,0.06),inset_0_0_0_1px_rgba(242,127,13,0.12)] group-hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),inset_0_0_0_1px_rgba(217,101,0,0.42)]" />
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
                     <div
                       className={`grid h-11 w-11 place-items-center rounded-full ${toneClass}`}
                     >

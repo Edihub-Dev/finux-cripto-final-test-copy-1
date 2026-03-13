@@ -70,9 +70,9 @@ const LiquidityInteractions = () => {
           {cards.map(({ title, description, Icon }) => (
             <article
               key={title}
-              className="relative rounded-[24px] border border-[rgba(255,140,0,0.2)] bg-[#332417] p-10 transition duration-300 ease-out hover:-translate-y-[6px] hover:border-[#FF8A00] hover:shadow-[0_0_30px_rgba(255,140,0,0.15)]"
+              className="relative rounded-[24px] border border-[rgba(255,140,0,0.2)] bg-[#332417] p-10 text-center transition duration-300 ease-out hover:-translate-y-[6px] hover:border-[#FF8A00] hover:shadow-[0_0_30px_rgba(255,140,0,0.15)] sm:text-left"
             >
-              <span className="text-[#FF8A00] drop-shadow-[0_0_12px_rgba(255,140,0,0.4)]">
+              <span className="mx-auto block w-fit text-[#FF8A00] drop-shadow-[0_0_12px_rgba(255,140,0,0.4)] sm:mx-0">
                 <Icon className="h-7 w-7" />
               </span>
               <h3 className="mt-5 text-[20px] font-semibold text-white">

@@ -30,16 +30,16 @@ const ReferralProgram = () => {
             Users can invite others to participate in ecosystem.
           </p>
 
-          <div className="mt-6 space-y-3">
+          <div className="mt-6 space-y-3 text-center sm:text-left">
             {bullets.map((item) => (
               <div
                 key={item.title}
-                className="flex items-center gap-4 text-white/70 md:whitespace-normal lg:whitespace-nowrap"
+                className="flex flex-col items-center gap-2 text-white/70 sm:flex-row sm:items-center sm:gap-4 sm:text-left md:whitespace-normal lg:whitespace-nowrap"
               >
                 <span className="shrink-0 text-orange-300">
                   <item.Icon className="h-5 w-5" />
                 </span>
-                <p className="flex-1 text-sm leading-6">{item.title}</p>
+                <p className="text-sm leading-6">{item.title}</p>
               </div>
             ))}
           </div>

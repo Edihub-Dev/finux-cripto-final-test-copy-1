@@ -48,7 +48,7 @@ const SustainableEconomics = () => {
           {metrics.map((item) => (
             <article
               key={item.title}
-              className="relative overflow-hidden rounded-[20px] border border-[rgba(255,140,0,0.2)] bg-[#2A1E14] p-10 text-left transition duration-300 ease-out hover:-translate-y-[6px] hover:border-[#FF8A00] hover:shadow-[0_0_30px_rgba(255,140,0,0.15)]"
+              className="relative overflow-hidden rounded-[20px] border border-[rgba(255,140,0,0.2)] bg-[#2A1E14] p-10 text-center transition duration-300 ease-out hover:-translate-y-[6px] hover:border-[#FF8A00] hover:shadow-[0_0_30px_rgba(255,140,0,0.15)] sm:text-left"
             >
               <span className="absolute left-0 right-0 top-0 h-1 bg-[#FF8A00]" />
               <p className="text-[18px] font-semibold text-[rgba(255,255,255,0.85)]">

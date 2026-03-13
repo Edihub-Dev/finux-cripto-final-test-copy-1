@@ -49,11 +49,11 @@ const NonCustodialSecurity = () => {
             keys, your crypto.
           </p>
 
-          <div className="mx-auto mt-8 w-full max-w-[520px] space-y-3 lg:mx-0">
+          <div className="mx-auto mt-8 w-full max-w-[520px] space-y-3 text-center sm:text-left lg:mx-0">
             {features.map((text) => (
               <div
                 key={text}
-                className="flex w-full items-start justify-start gap-3 text-left"
+                className="flex flex-col items-center gap-2 sm:flex-row sm:items-start sm:justify-start sm:gap-3 sm:text-left"
               >
                 <span className="mt-[2px] grid h-5 w-5 shrink-0 place-items-center text-[#FF8A00] drop-shadow-[0_0_10px_rgba(255,140,0,0.4)]">
                   <CheckCircle2 className="h-5 w-5" />
