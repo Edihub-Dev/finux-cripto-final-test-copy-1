@@ -3,6 +3,7 @@
 import {
   Children,
   cloneElement,
+  isValidElement,
   useEffect,
   useMemo,
   useRef,
@@ -56,7 +57,9 @@ function DockItem({
       role="button"
       aria-haspopup="true"
     >
-      {Children.map(children, (child) => cloneElement(child, { isHovered }))}
+      {Children.map(children, (child) =>
+        isValidElement(child) ? cloneElement(child, { isHovered }) : child,
+      )}
     </div>
   );
 }
@@ -251,6 +254,13 @@ export default function Dock({
       >
         {items.map((item, index) => {
           const resolvedItemBaseWidth = item.baseWidth ?? resolvedBaseItemWidth;
+          const isTextItem = String(item.className ?? "").includes(
+            "dock-item--text",
+          );
+          const isEcosystemIconItem = String(item.className ?? "").includes(
+            "dock-item--ecosystem",
+          );
+          const shouldShowLabel = !isTextItem && !isEcosystemIconItem;
 
           return (
             <DockItem
@@ -261,7 +271,7 @@ export default function Dock({
               baseItemWidth={resolvedItemBaseWidth}
             >
               <DockIcon>{item.icon}</DockIcon>
-              <DockLabel>{item.label}</DockLabel>
+              {shouldShowLabel ? <DockLabel>{item.label}</DockLabel> : null}
             </DockItem>
           );
         })}

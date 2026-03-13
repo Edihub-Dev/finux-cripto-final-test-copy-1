@@ -73,7 +73,7 @@ export default function AppDock() {
     const ecosystemNavLinks = [
       { label: "Tokens", target: "tokens" },
       { label: "Wallet", target: "wallet" },
-      { label: "Dexs", target: "dexs" },
+      { label: "DEX", target: "dexs" },
       { label: "Economics", target: "economics" },
     ];
 
