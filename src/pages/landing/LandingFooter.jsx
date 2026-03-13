@@ -125,13 +125,14 @@ const LandingFooter = () => {
               <h3>Contact US</h3>
               <ul>
                 <li>
-                  <a href="mailto:finuxtech@protonmail.com">Email: finuxtech@protonmail.com</a>
+                  <a href="mailto:finuxtech@protonmail.com">finuxtech@protonmail.com</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
+        {/* Newsletter section - Uncomment when needed
         <div className="footer-newsletter">
           <div className="footer-newsletter__copy">
             <h3>Stay tuned for more updates</h3>
@@ -155,6 +156,7 @@ const LandingFooter = () => {
             <button type="submit">Subscribe</button>
           </form>
         </div>
+        */}
 
         <div className="footer-bottom">
           <div className="footer-brand" aria-label="Finux">
