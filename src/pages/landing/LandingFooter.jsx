@@ -122,7 +122,7 @@ const LandingFooter = () => {
               </ul>
             </div>
              <div className="footer-column">
-              <h3>Contect US</h3>
+              <h3>Contact US</h3>
               <ul>
                 <li>
                   <a href="mailto:finuxtech@protonmail.com">Email: finuxtech@protonmail.com</a>
