@@ -26,6 +26,7 @@ import LandingFooter from "./LandingFooter.jsx";
 import LandingHeader from "./LandingHeader.jsx";
 import LandingMain from "./LandingMain.jsx";
 import LandingNavbar from "./LandingNavbar.jsx";
+import FloatingSocialButtons from "../../components/shared/FloatingSocialButtons.jsx";
 
 import { navLinks } from "./landingData.js";
 
@@ -338,6 +339,7 @@ const LandingPage = () => {
       <div id="legal" className="scroll-mt-28">
         <LandingFooter />
       </div>
+      <FloatingSocialButtons />
     </div>
   );
 };
